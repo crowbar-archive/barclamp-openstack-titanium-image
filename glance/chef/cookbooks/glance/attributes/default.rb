@@ -17,7 +17,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
+default[:glance][:rsync_user] = "rcuser"
 override[:glance][:user]="glance"
 
 default[:glance][:verbose] = "False"
