@@ -19,7 +19,7 @@
 ####
 Chef::Log.info(">>>>>> Glance: qemu Recipe")
 # recipe added as qemu package is required for creating bootable volumes.
-package "xinetd" do
+package "qemu" do
 	action :install
 end
 
