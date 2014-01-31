@@ -1,4 +1,4 @@
-# Copyright 2011, Dell
+# Copyright 2014, Dell
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,18 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Author: RobHirschfeld
-#
 
 barclamp:
   name: glance
   display: Glance
-  description: '(Ha) OpenStack Image Service: discovery, registration and delivery services for disk and server images.'
+  description: 'OpenStack HA - image service: discovery, registration and delivery services for disk and server images' 
   version: 0
   requires:
+  requires:
+    - haproxy
+    - percona
     - keystone
   member:
     - haopenstack
+os_support:
+    - ubuntu-12.04
 
 crowbar:
   layout: 1
