@@ -1,8 +1,10 @@
 {
   "id": "bc-template-glance",
-  "description": "Glance service (image registry and delivery service) for the cloud",
+  "description": "OpenStack HA - image service: discovery, registration and delivery services for disk and server images",
   "attributes": {
     "glance": {
+      "haproxy_instance": "",
+      "percona_instance": "",
       "verbose": false,
       "debug": false,
       "images": [
